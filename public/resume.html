@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Mishra - Resume</title>
+    <style>
+        @page {
+            margin: 0.5in;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+        
+        .header .title {
+            font-size: 18px;
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 12px;
+            color: #64748b;
+            line-height: 1.8;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            color: #1e293b;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary {
+            text-align: justify;
+            color: #475569;
+            font-size: 14px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .skill-category {
+            margin-bottom: 10px;
+        }
+        
+        .skill-category strong {
+            color: #1e293b;
+            font-size: 13px;
+        }
+        
+        .skill-category span {
+            color: #64748b;
+            font-size: 12px;
+        }
+        
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        
+        .job-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .job-title, .degree {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+        
+        .company, .institution {
+            font-size: 14px;
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        
+        .period {
+            font-size: 12px;
+            color: #64748b;
+            font-style: italic;
+        }
+        
+        .location {
+            font-size: 12px;
+            color: #64748b;
+        }
+        
+        .description {
+            font-size: 13px;
+            color: #475569;
+            margin-top: 5px;
+            text-align: justify;
+        }
+        
+        .description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .description li {
+            margin-bottom: 3px;
+        }
+        
+        .project-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 3px;
+        }
+        
+        .project-tools {
+            font-size: 11px;
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .project-desc {
+            font-size: 12px;
+            color: #64748b;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ANKIT MISHRA</h1>
+        <div class="title">Data Analyst</div>
+        <div class="contact-info">
+            New Delhi, India | +91 98765 43210 | ankit.mishra@example.com<br>
+            LinkedIn: linkedin.com/in/ankitmishra | GitHub: github.com/ankitmishra | Kaggle: kaggle.com/ankitmishra
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">
+            Passionate Data Analyst with 3+ years of experience transforming complex datasets into actionable business insights. 
+            Expertise in statistical analysis, data visualization, and machine learning. Proven track record of reducing report 
+            generation time by 40% and delivering data-driven solutions that drive business growth. Specialized in Python, SQL, 
+            Power BI, and Tableau with a strong foundation in statistical methods and machine learning algorithms.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Data Analysis:</strong><br>
+                <span>Python, SQL, R, Excel, Pandas, NumPy</span>
+            </div>
+            <div class="skill-category">
+                <strong>Visualization:</strong><br>
+                <span>Power BI, Tableau, Matplotlib, Seaborn, Plotly</span>
+            </div>
+            <div class="skill-category">
+                <strong>Machine Learning:</strong><br>
+                <span>Scikit-learn, Regression, Classification, Clustering, EDA</span>
+            </div>
+            <div class="skill-category">
+                <strong>Tools & Others:</strong><br>
+                <span>Git, Jupyter, VS Code, Data Cleaning, Statistical Analysis</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Data Analyst</div>
+                    <div class="company">Tech Solutions India</div>
+                </div>
+                <div class="period">2023 - Present</div>
+            </div>
+            <div class="location">New Delhi, India</div>
+            <div class="description">
+                <ul>
+                    <li>Leading data visualization initiatives and automating reporting processes across the organization</li>
+                    <li>Reduced report generation time by 40% through development of Python automation scripts</li>
+                    <li>Developed interactive dashboards for stakeholder decision-making using Power BI and Tableau</li>
+                    <li>Collaborated with cross-functional teams to identify key business metrics and KPIs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Data Analyst Intern</div>
+                    <div class="company">DataWise Analytics</div>
+                </div>
+                <div class="period">2022 - 2023</div>
+            </div>
+            <div class="location">Noida, India</div>
+            <div class="description">
+                <ul>
+                    <li>Assisted in data cleaning and preparation for multiple client projects</li>
+                    <li>Created weekly performance dashboards using Power BI for management review</li>
+                    <li>Collaborated with cross-functional teams on data analysis and reporting projects</li>
+                    <li>Performed exploratory data analysis to identify trends and patterns in client datasets</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education & Certifications</h2>
+        
+        <div class="education-item">
+            <div class="job-header">
+                <div>
+                    <div class="degree">B.Sc. in Data Science</div>
+                    <div class="institution">University of Delhi</div>
+                </div>
+                <div class="period">2019 - 2022</div>
+            </div>
+            <div class="description">
+                Graduated with First Class Honors. Specialized in Statistical Methods and Machine Learning.
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="job-header">
+                <div>
+                    <div class="degree">Data Science Professional Certificate</div>
+                    <div class="institution">Coursera / IBM</div>
+                </div>
+                <div class="period">2022</div>
+            </div>
+            <div class="description">
+                Comprehensive program covering Python, SQL, Machine Learning, and Data Visualization.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="project-item">
+            <div class="project-title">Sales Performance Dashboard</div>
+            <div class="project-tools">Power BI | SQL | Excel</div>
+            <div class="project-desc">
+                Interactive Power BI dashboard tracking regional sales performance, identifying key growth areas and underperforming sectors.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Customer Churn Prediction</div>
+            <div class="project-tools">Python | Scikit-learn | Pandas</div>
+            <div class="project-desc">
+                Machine learning model to predict customer churn for a telecom provider, achieving 85% accuracy using Random Forest algorithm.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">E-commerce Customer Segmentation</div>
+            <div class="project-tools">Python | SQL | Clustering</div>
+            <div class="project-desc">
+                Customer segmentation analysis using RFM (Recency, Frequency, Monetary) modeling to optimize marketing campaigns.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">COVID-19 Data Exploration</div>
+            <div class="project-tools">SQL | Tableau</div>
+            <div class="project-desc">
+                Comprehensive exploratory data analysis of global COVID-19 trends, visualizing infection rates and recovery statistics.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Financial Analysis Dashboard</div>
+            <div class="project-tools">Excel | VBA</div>
+            <div class="project-desc">
+                Excel-based financial dashboard for tracking expenses, revenue, and profit margins with dynamic charts and slicers.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Marketing Campaign Analysis</div>
+            <div class="project-tools">R | Ggplot2</div>
+            <div class="project-desc">
+                Analyzed marketing campaign performance data to recommend budget allocation strategies for maximum ROI.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect to PDF download after a short delay
+        setTimeout(() => {
+            window.print();
+        }, 500);
+    </script>
+</body>
+</html>
